@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lucida Fax";
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    background-color: #3a474d;
+    background-image: url('bodybg.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header1 {
+    font-family: "Lucida Fax";
+    font-size: 5em;
+    color: #e6dccc;
+    padding-top: 3%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 44px; 
+}
+
+label {
+    font-size: 1.5em;
+    margin-top: 20px; 
+}
+
+.loginForm {
+    display: flex;
+    font-family: "Lucida Fax";
+    border-radius: 55px;
+    color: #ffffff;
+    background-color: rgb(88, 88, 87);
+    box-shadow:  -25px -25px 56px #171c1f,
+				25px 25px 56px #5c5c5c;
+    margin: 50px auto; 
+    max-width: 600px;
+    margin-top: 5%;
+}
+
+form {
+    color: #ffffff;
+    background-color: #3c4259;
+    padding: 50px;
+    border-radius: 55px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+#username,
+#password {
+    font-family: "Georgia"; 
+    font-size: 1.3em;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background-color: #c5cce7;
+}
+
+input[type="submit"] {
+    background-color: #6674ae;
+    color: #fff;
+    font-weight: 1000;
+    border-radius: 20px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: "Lucida Fax";
+}
+
+input[type="submit"]:hover {
+    background-color: #a8ebb1;
+	color: #222234;
+}

@@ -1,0 +1,199 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lucida Fax";
+	scroll-behavior: smooth;
+	/* border: 1px dotted green; */
+}
+
+body {
+    background-color: #222234;
+    background-image: url('bodybg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.content table {
+    width: 100%;
+}
+
+
+.content th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    top: 0;
+    padding: 12px;
+    text-align: center;
+    border: 1px dotted #ccc;
+    background-color: #31313f;
+    border-radius: 9px;
+}
+
+.table-wrapper {
+    height: 100%; 
+    overflow: auto; 
+  }
+  
+  #foodstalls-table th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #31313f;
+    color: #fff;
+    padding: 12px;
+  }
+  
+
+/* .content tr {
+    position: fixed;
+} */
+
+.content td {
+    padding: 12px;
+    text-align: center;
+}
+
+.content table a {
+    color: #ccc;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+	padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-image: url('aboutus.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+    font-size: 1.4rem;
+}
+
+.active {
+    background-color: #222634; 
+    font-weight: bolder;
+    font-family: "Roboto";
+    border-radius: 20px;
+    border: 1px solid #ca8787;
+}
+
+nav ul {
+	list-style: none;
+    margin-top: 4%;
+	padding: 0;
+    text-align: center;
+}
+
+nav li {
+	margin-bottom: 1rem;
+    text-align: center;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+	color: #ca8787;
+}
+
+.padding {
+	padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.padding1 {
+	padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+button[type="submit"] {
+    background-color: #6674ae;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    font-weight: 1000;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: "Lucida Fax";
+}
+
+button[type="submit"]:hover {
+    background-color: #d86767;
+	color: #222234;
+}
+
+button[type="submitData"] {
+    background-color: #6674ae;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    font-weight: 1000;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Lucida Fax";
+}
+
+button[type="submitData"]:hover {
+    background-color: #a8ebb1;
+	color: #222234;
+}
+
+form {
+	margin-top: auto;
+}
+
+input[type="text"],
+input[type="number"] {
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background-color: #c5cce7;
+}
+
+.content {
+	padding: 1rem;
+	flex-grow: 1;
+    background-image: url('bodybg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: #f2f5ea;
+    margin-left: 250px;
+}
+
+.table-wrapper {
+    overflow: auto;
+}

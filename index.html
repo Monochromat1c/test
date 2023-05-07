@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mall Management System</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script>
+		var titleIndex = 0;
+		var titleTxt = 'Welcome to the Mall Management System!';
+		var titleSpeed = 15;
+	
+		var paragraphIndex = 0;
+		var paragraphs = [
+		  {
+			text: 'We provide a comprehensive platform for managing your mall operations efficiently and effectively. Our system is designed to help you streamline your business processes and provide a better experience for your customers.',
+			speed: 6
+		  }
+		];
+	  
+		var typingInProgress = true;
+	  
+		function typeEffect() {
+		  if (titleIndex < titleTxt.length) {
+			document.getElementById("title").innerHTML += titleTxt.charAt(titleIndex);
+			titleIndex++;
+			setTimeout(typeEffect, titleSpeed);
+		  }
+			else if (paragraphIndex < paragraphs.length) {
+			var paragraph = paragraphs[paragraphIndex];
+			if (paragraph.typingIndex === undefined) {
+			  paragraph.typingIndex = 0;
+			}
+			if (paragraph.typingIndex < paragraph.text.length) {
+			  document.getElementById("paragraph" + (paragraphIndex + 1)).innerHTML += paragraph.text.charAt(paragraph.typingIndex);
+			  paragraph.typingIndex++;
+			  setTimeout(typeEffect, paragraph.speed);
+			} else {
+			  paragraphIndex++;
+			  if (paragraphIndex === paragraphs.length) {
+				typingInProgress = false;
+			  }
+			  setTimeout(typeEffect, 0);
+			}
+		  }
+		}
+	  
+		window.onload = function() {
+		  typeEffect();
+		}
+	  </script>
+</head>
+<body>
+	<header>
+		<a href="#welcome-section"><img class="logo" src="logo.png" alt="MMS Logo" ></a>
+		<div class="header-link">
+			<a class="about-page-link" href="#about-page">About the Page</a>
+			<a class="about-us-link" href="#about-us">About Us</a>
+			<a class="login-link" href="Log in page.html">Log In</a>
+		</div>
+	</header>
+	<div class="welcome-section" id="welcome-section">
+		<div class="welcome-content">
+			<div id="title">
+				
+			</div>
+			<div id="paragraph1">
+					
+			</div>
+		</div>
+	</div>
+	<div class="about-page" id="about-page">
+		<div class="about-page-content">
+			<h2>About the Page</h2>
+			<p class="about-page-p1">This system is designed to help mall managers <span>efficiently manage</span> different aspects of their operations. From food stalls and movie screenings to restrooms and staff information, this system has got it all covered.</p>
+			<p class="about-page-p2">One of the <span>main features</span> of this system is the foodstalls table. Here, mall managers can track the different food stalls operating in their mall, along with the products they sell and their availability. This information can help managers make informed decisions when it comes to leasing out spaces to food vendors and ensuring that customers have access to the products they want.</p>
+			<p class="about-page-p3">Another important table in the Mall Management System is the now_showing table. With this table, mall managers can keep track of the movies currently being shown in their cinemas, as well as the availability of seats for each screening. This information can help managers optimize their movie schedules and maximize revenue from their cinema operations.</p>
+			<p class="about-page-p4">In addition to these features, the Mall Management System also includes tables for restroom and staffinfo management. With the restroom table, managers can monitor the condition of their restrooms and ensure that they are well-maintained for customers. Meanwhile, the staffinfo table can be used to keep track of important details about mall staff, such as their contact information and work schedules.</p>
+			<p class="about-page-p5"> Overall, the Mall Management System is a <span>powerful tool</span> that can help mall managers streamline their operations and provide better service to their customers.</p>
+		</div>
+	</div>
+	<div class="about-us" id="about-us">
+		<div class="about-us-content">
+			<h2>About Us</h2>
+			<p class="about-us-content-p1">We are a team of four developers: Bides, Ralph Lionel; Dichosa, Ian Gabriel; Diestro, Charles Manuel; and Najera, Ezekiel David. We created this website as a requirement for our midterm examination. Our goal is to provide a user-friendly platform for managing mall operations, and we are constantly improving and updating our system to meet the needs of our clients.</p>
+			<p class="about-us-content-p2">Copyright © 2023 Filamer Christian University, College of Computer Studies, BSIT 2B 2022-2023. <br>All Rights Reserved.</p>
+		</div>
+	</div>
+</body>
+</html>

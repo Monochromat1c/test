@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lucida Fax";
+	scroll-behavior: smooth;
+	/* border: 1px dotted green; */
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    width: 100%;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	background-color: #363333;
+	color: #f5f5f5;
+    background-image: url('bodybg.gif');
+	padding: 10px;
+}
+
+/* .header-left a, */
+.header-link a{
+	font-size: 1.2rem;
+	color: #f5f5f5;
+	text-decoration: none;
+}
+
+.header-link{
+	display: flex;
+  	align-items: center;
+}
+
+.about-page-link, .about-us-link  {
+	margin-right: 20px;
+  }
+
+  .login-link {
+	margin-left: auto;
+	padding-right: 2%;
+  }
+
+/* 
+.header-left{
+	text-align: left;
+	display: flex;
+	width: 100%;
+} */
+
+.logo {
+	padding-right: 3%;
+}
+
+/* .left-link {
+	display: flex;
+	height: 10%;
+	padding-top: 5%;	
+} */
+
+/* .header-left a:hover, */
+.header-link a:hover {
+	color: #ca8787;
+}
+
+.about-us-link {
+	margin-left: 2em;
+}
+
+.about-page-link {
+	margin-left: 2em;
+}
+
+/* .header-left, */
+.header-link {
+	display: flex;
+	width: 100%;
+}
+
+/* .header-right {
+	margin-right: 1rem;
+} */
+
+/* Welcome section styles */
+.welcome-section {
+	background-color: #f5f5f5;
+	height: 62rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-image: url('bodybg.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.welcome-content {
+	text-align: center;
+	padding: 2rem;
+}
+
+.welcome-content span {
+	color: #f37b77;
+}
+
+#title {
+	font-size: 4rem;
+	margin-bottom: 3rem;
+    color: #f5f5f5;
+}
+
+#paragraph1 {
+	font-size: 2rem;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+    max-width: 60%;
+    margin: auto;
+    color: #c9c4c4;
+}
+
+/* About page styles */
+.about-page {
+    background-image: url('aboutpage.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #222634;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-page-content {
+	text-align: center;
+	height: 100%;
+	padding: 2rem;
+}
+
+.about-page-content span {
+	color: #c7ad58;
+}
+
+.about-page-content h2 {
+	color: #f5f5f5;
+	font-size: 4rem;
+	margin-top: 9rem;
+	margin-bottom: 1rem;
+}
+
+.about-page-content p {
+	font-size: 2rem;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+    margin: auto;
+    max-width: 60%;
+	color: #c9c4c4;
+}
+
+.about-page-p1,
+.about-page-p2,
+.about-page-p3,
+.about-page-p4,
+.about-page-p5 {
+	padding-bottom: 1.5rem;
+}
+
+/* About us styles */
+.about-us {
+    background-image: url('aboutus.png');
+	background-color: #222634;
+	padding: 2rem;
+}
+
+.about-us-content h2 {
+    text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	color: #f5f5f5;
+}
+
+.about-us-content-p1 {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+	color: #c9c4c4;
+	padding: 2% 2% 2% 2% ;
+	text-align: center;
+}
+
+.about-us-content-p2 {
+	font-size: 1.2rem;
+	line-height: 1.5;
+    margin: auto;
+    max-width: 60%;
+	text-align: center;
+	color: #c9c4c4;
+	font-weight: bolder;
+}
+
+
+
+
